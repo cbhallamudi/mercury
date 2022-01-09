@@ -1,0 +1,40 @@
+/*sidebar font-family: 'DM Sans';*/
+/*main content font-family: 'Open Sans';*/
+/*header font-family: 'Roboto';*/
+
+/*common styles*/
+	html{
+		font-size: 62.5%;
+	}
+
+	*{
+		padding: 0;
+		margin: 0;
+		outline: none;
+		border: none;
+	}
+
+.mercury-home-main-container{
+	display: grid;
+	grid-template-areas: 'sidebar header header header header' 
+						 'sidebar content content content content'
+						 'sidebar content content content content'
+						 'sidebar content content content content'
+						 'sidebar content content content content';
+ 	height: 100vh;
+}
+
+nav.sidebar{
+	grid-area: "sidebar";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 8vh 92vh;
+	background: #216A88;
+
+}
+header.header{
+	grid-area: "header";
+}
+section.content{
+	grid-area: "content";
+}
